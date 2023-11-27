@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mel's Sports Rumour Mill</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Graduate&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="/v1/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="pageContainer">
+      <header>
+        <div class="logo">
+          <img src="/v1/sportsLogo.png" alt="Mel's Sports Rumour Mill Logo" />
+          <h1>Mel's Sports<br />Rumour Mill</h1>
+        </div>
+        <button class="btn btn-lrg btn-opener">
+          Share some<br />Sports Gossip!
+        </button>
+      </header>
+
+      <form class="gossipForm hidden">
+        <input type="text" placeholder="Share a rumour with us..." />
+        <span>200</span>
+        <input type="text" placeholder="Rumour source..." />
+        <select>
+          <option value="">Choose a sport:</option>
+          <option value="Baseball">Baseball</option>
+          <option value="Hockey">Hockey</option>
+          <option value="Soccer">Soccer</option>
+        </select>
+        <button class="btn btn-lrg">Post Rumour</button>
+      </form>
+
+      <main class="main">
+        <aside>
+          <ul>
+            <li><button class="btn btn-all">All</button></li>
+            <li><button class="btn sportButton">Baseball</button></li>
+            <li><button class="btn sportButton">Hockey</button></li>
+            <li><button class="btn sportButton">Soccer</button></li>
+          </ul>
+        </aside>
+
+        <section>
+          <ul class="rumoursList">
+            <li class="rumourContainer">
+              <p class="rumour">
+                React is being developed by Meta (formerly facebook)
+                <a
+                  class="sourceLink"
+                  href="https://opensource.fb.com/"
+                  target="_blank"
+                  >(Source)</a
+                >
+              </p>
+              <span class="sportTag" style="background-color: aquamarine"
+                >#Technology#</span
+              >
+              <div class="vote_buttons">
+                <button>
+                  <span class="btn-icon">👍</span><strong>25</strong>
+                </button>
+                <button>
+                  <span class="btn-icon">🤯</span><strong>6</strong>
+                </button>
+                <button>
+                  <span class="btn-icon">⛔</span><strong>3</strong>
+                </button>
+              </div>
+            </li>
+            <li class="rumourContainer">
+              <p class="rumour">
+                Millennial dads spend 3 times as much time with their kids than
+                their fathers spent with them. In 1982, 43% of fathers had never
+                changed a diaper. Today, that number is down to 3%
+                <a
+                  class="sourceLink"
+                  href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids"
+                  target="_blank"
+                  >(Source)</a
+                >
+              </p>
+              <span class="sportTag" style="background-color: blueviolet"
+                >#Society#</span
+              >
+              <div class="vote_buttons">
+                <button>
+                  <span class="btn-icon">👍</span><strong>15</strong>
+                </button>
+                <button>
+                  <span class="btn-icon">🤯</span><strong>16</strong>
+                </button>
+                <button>
+                  <span class="btn-icon">⛔</span><strong>9</strong>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <script src="/v1/script.js"></script>
+  </body>
+</html>

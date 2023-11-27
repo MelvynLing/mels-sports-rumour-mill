@@ -1,0 +1,317 @@
+/* 
+#2660a4
+#edf7f6
+#B6DCFE
+#DE6142
+#5B7553
+
+#040403
+#062726
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2660a4;
+  color: #edf7f6;
+  padding: 50px 65px;
+}
+#root {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+section {
+  overflow: scroll;
+  padding-bottom: 40px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo img {
+  height: 80px;
+  width: 80px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+}
+
+.gossipForm {
+  background-color: #b6dcfe;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 0px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 20px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+}
+.gossipForm input,
+.gossipForm select {
+  background-color: #edf7f6;
+  width: 150px;
+  color: #040403;
+  font-family: "Nunito Sans", sans-serif;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 0px;
+  padding: 10px 20px;
+  text-align: center;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+}
+.gossipForm input::placeholder {
+  color: #2660a4;
+}
+.gossipForm input:first-child {
+  width: 350px;
+  flex-grow: 1;
+}
+.gossipForm span {
+  font-family: "Graduate", serif;
+  color: #2660a4;
+  font-size: 20px;
+  margin-right: 18px;
+}
+.gossipForm .btn {
+  font-size: 20px;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 35px;
+  /* text-align: center; */
+  font-family: "Graduate", serif;
+  color: #edf7f6;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 30px;
+  height: calc(100vh - 80px - 40px - 45px);
+}
+
+.btn {
+  font-family: "Graduate", serif;
+  line-height: 1;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #de6142;
+  color: #edf7f6;
+  padding: 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.btn-icon {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+header .btn-lrg {
+  width: 250px;
+}
+
+aside button.sportButton,
+.gossipForm button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #2660a4;
+  background-color: #edf7f6;
+  background-image: none;
+}
+
+aside button.sportButton {
+  margin-bottom: 15px;
+  width: 100%;
+  color: #edf7f6;
+  background-color: #edf7f6;
+  background-image: none;
+}
+
+.btn-all {
+  margin-bottom: 20px;
+  width: 100%;
+  background-image: linear-gradient(135deg, #92c4f3, #040403);
+  color: #edf7f6;
+}
+
+.btn-lrg {
+  font-size: 25px;
+}
+.btn:hover {
+  transform: scale(105%) rotate(2deg);
+  transition: 0.3s;
+  color: #edf7f6;
+  background-image: linear-gradient(135deg, #040403, #92c4f3);
+}
+
+p.rumour {
+  font-size: 20px;
+  line-height: 1.4;
+  font-family: "Nunito Sans", sans-serif;
+  color: #040403;
+}
+
+a.sourceLink,
+a.sourceLink:link,
+a.sourceLink:visited {
+  font-size: 15px;
+  font-family: "Graduate", serif;
+  color: #2660a4;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+a.sourceLink:hover {
+  color: #de6142;
+}
+a.sourceLink:active {
+  color: #50a935;
+  text-decoration: underline;
+}
+
+span.sportTag {
+  font-size: 15px;
+  font-family: "Graduate", serif;
+  color: #edf7f6;
+  padding: 10px 5px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+section li.rumourContainer {
+  background-color: #edf7f6;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  justify-content: space-around;
+  letter-spacing: -1px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+}
+section li.rumourContainer .vote_buttons {
+  /* margin-left: auto; */
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+section li.rumourContainer .vote_buttons button {
+  padding: 10px 5px;
+  width: 65px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #b6dcfe;
+  color: #2660a4;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  font-family: "Graduate", serif;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+section li.rumourContainer .vote_buttons button:hover {
+  transition: 0.3s;
+}
+
+section li.rumourContainer .vote_buttons button:disabled {
+  background-color: #edf7f6;
+}
+section li.rumourContainer button:hover {
+  background-color: #92c4f3;
+  color: #edf7f6;
+  transition: 0.3s;
+}
+.hidden {
+  display: none;
+}
+.loader {
+  font-size: 35px;
+  font-family: "Graduate", serif;
+  text-align: center;
+  margin-top: 25px;
+}
+
+@media (max-width: 1200px) {
+  section li.rumourContainer {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+}
+@media (max-width: 1100px) {
+  body {
+    padding: 25px 32px;
+  }
+  .gossipForm {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .gossipForm input,
+  .gossipForm input:first-child,
+  .gossipForm select {
+    margin: 0;
+    width: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
+@media (max-width: 680px) {
+  h1 {
+    font-size: 25px;
+  }
+  header .btn-lrg {
+    width: 150px;
+    font-size: 20px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 550px) {
+  header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  header .btn-lrg {
+    margin-top: 10px;
+    width: auto;
+  }
+}
